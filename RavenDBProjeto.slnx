@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="src/RavenDBProjeto.API/RavenDBProjeto.API.csproj" />
+  <Project Path="src/RavenDBProjeto.Aplication/RavenDBProjeto.Aplication.csproj" />
+  <Project Path="src/RavenDBProjeto.Domain.Core/RavenDBProjeto.Domain.Core.csproj" />
+  <Project Path="src/RavenDBProjeto.Domain.Service/RavenDBProjeto.Domain.Service.csproj" />
+  <Project Path="src/RavenDBProjeto.Domain/RavenDBProjeto.Domain.csproj" />
+  <Project Path="src/RavenDBProjeto.Infra/RavenDBProjeto.Infra.csproj" />
+</Solution>

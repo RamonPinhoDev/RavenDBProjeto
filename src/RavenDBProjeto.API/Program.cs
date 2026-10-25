@@ -1,6 +1,14 @@
+using RavenDBProjeto.Infra.CrossCuting.IOC;
+
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 // Add services to the container.
+builder.Services.AddServices();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -12,6 +20,11 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.UseSwaggerUI(options => {
+        options.SwaggerEndpoint("/openapi/v1.json", "RavenDBProjeto API");
+        options.RoutePrefix = "swagger";
+
+    });
 }
 
 app.UseHttpsRedirection();

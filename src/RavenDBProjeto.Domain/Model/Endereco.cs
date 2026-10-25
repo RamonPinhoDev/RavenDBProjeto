@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace RavenDBProjeto.Domain.Model;
 
-internal class Endereco
+public class Endereco
 {
+    public string Id { get; set; }
     public string Logradouro { get; set; }
     public int Numero { get; set; }
 

@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RavenDBProjeto.Domain.Service\RavenDBProjeto.Domain.Service.csproj" />
+    <ProjectReference Include="..\RavenDBProjeto.Domain\RavenDBProjeto.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
